@@ -1,0 +1,22 @@
+{
+  "name": "@next-rbac/eslint-config",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./base": "./base.js",
+    "./next-js": "./next.js",
+    "./node": "./node.js"
+  },
+  "devDependencies": {
+    "@next-rbac/prettier": "workspace:*",
+    "@rocketseat/eslint-config": "^2.2.2",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1"
+  },
+  "prettier": "@next-rbac/prettier",
+  "eslintConfig": {
+    "extends": ["./base.cjs"]
+  }
+}
