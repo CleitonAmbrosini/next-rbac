@@ -5,12 +5,17 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "devDependencies": {
-    "@next-rbac/prettier": "workspace:*",
     "@next-rbac/eslint-config": "workspace:*",
+    "@next-rbac/prettier": "workspace:*",
     "@next-rbac/tsconfig": "workspace:*"
   },
   "eslintConfig": {
-    "extends": ["@next-rbac/eslint-config/base"]
+    "extends": [
+      "@next-rbac/eslint-config/base"
+    ]
   },
-  "prettier": "@next-rbac/prettier"
+  "prettier": "@next-rbac/prettier",
+  "dependencies": {
+    "@casl/ability": "^6.7.3"
+  }
 }
