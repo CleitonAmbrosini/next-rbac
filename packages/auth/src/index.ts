@@ -13,6 +13,10 @@ import { organizationSubject } from './subjects/organization';
 import { projectSubject } from './subjects/project';
 import { userSubject } from './subjects/user';
 
+export * from './models/organization';
+export * from './models/projects';
+export * from './models/user';
+
 const appAbilitiesSchema = z.union([
   projectSubject,
   userSubject,
@@ -38,7 +42,7 @@ export const defineAbilityFor = (user: User) => {
 
   const ability = builder.build({
     detectSubjectType(subject) {
-        return subject.__typename
+      return subject.__typename;
     },
   });
 
