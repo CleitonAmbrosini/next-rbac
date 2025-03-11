@@ -103,6 +103,14 @@ To access the API documentation and learn more about the routes, simply go to /d
 
 <img width="150" height="150" src="https://github.com/cleitonAmbrosini.png" />
 
+
+<!-- 
+  how to run
+
+  - docker compose up -d
+  - pnpm dev
+ -->
+
 ##### Cleiton A. Ambrosini
 ###### _Software Engineer_
 
